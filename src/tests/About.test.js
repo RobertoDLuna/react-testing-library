@@ -1,3 +1,0 @@
-// começando o projeto
-
-test('', () => { });
