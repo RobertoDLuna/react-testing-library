@@ -16,14 +16,14 @@ describe('Testa o componente About', () => {
     renderWithRouter(<About />);
     const firstP = screen
       .getByText(
-        /this application simulates a Pokédex, a digital encyclopedia containing all Pokémons/i,
+        /this application simulates a pokédex, a digital encyclopedia containing all/i,
       );
-
-    expect(firstP).toBeInTheDocument();
 
     const secondP = screen.getByText(
       /one can filter Pokémons by type, and see more details for each one of them/i,
     );
+
+    expect(firstP).toBeInTheDocument();
     expect(secondP).toBeInTheDocument();
   });
   it(`Teste se a página contém a seguinte imagem de uma Pokédex 
